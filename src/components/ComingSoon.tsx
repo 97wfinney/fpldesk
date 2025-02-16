@@ -6,7 +6,7 @@ const ComingSoon = () => {
   const [currentText, setCurrentText] = useState('');
   const [currentLine, setCurrentLine] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
-  const [displayedLines, setDisplayedLines] = useState([]);
+  const [displayedLines, setDisplayedLines] = useState<string[]>([]);
 
   const terminalLines = [
     { text: 'Initializing FPL Terminal v1.0...', persist: true },
@@ -26,7 +26,8 @@ const ComingSoon = () => {
     }, 500);
 
     // Type or delete text
-    let timeout;
+    
+    let timeout: ReturnType<typeof setTimeout>;
     if (currentLine < terminalLines.length) {
       const line = terminalLines[currentLine];
       
@@ -108,10 +109,10 @@ const ComingSoon = () => {
           {/* Terminal Lines */}
           <div className="space-y-2 h-64 overflow-y-auto">
             {displayedLines.map((line, index) => (
-              <div key={index} className="text-green-500">> {line}</div>
+              <div key={index} className="text-green-500">{'>'} {line}</div>
             ))}
             <div className="text-green-500">
-              > {currentText}{showCursor ? '█' : ' '}
+              {'>'} {currentText}{showCursor ? '█' : ' '}
             </div>
           </div>
         </div>
