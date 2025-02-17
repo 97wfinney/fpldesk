@@ -163,7 +163,15 @@ const ComingSoon = () => {
           Advanced FPL analytics. Coming soon.
         </div>
         <div className="text-gray-600">
-          For updates: <span className="text-orange-500">@PelicanLabs</span>
+          For updates:{' '}
+          <a 
+            href="https://twitter.com/PelicanLabs" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="text-orange-500 hover:text-orange-400 transition-colors"
+          >
+            @PelicanLabs
+          </a>
         </div>
       </div>
     </div>
