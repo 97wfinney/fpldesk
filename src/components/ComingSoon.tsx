@@ -163,7 +163,7 @@ const ComingSoon = () => {
           Advanced FPL analytics. Coming soon.
         </div>
         <div className="text-gray-600">
-          For updates: <span className="text-orange-500">@pelicanlabs</span>
+          For updates: <span className="text-orange-500">@PelicanLabs</span>
         </div>
       </div>
     </div>
