@@ -165,12 +165,12 @@ const ComingSoon = () => {
         <div className="text-gray-600">
           For updates:{' '}
           <a 
-            href="https://twitter.com/PelicanLabs" 
+            href="https://twitter.com/97wfinney" 
             target="_blank" 
             rel="noopener noreferrer" 
             className="text-orange-500 hover:text-orange-400 transition-colors"
           >
-            @PelicanLabs
+            @97wfinney
           </a>
         </div>
       </div>
